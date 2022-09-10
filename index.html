@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sales Tax calculator</title>
+</head>
+
+<body>
+    <header>
+        <div class="head"><h1>SALES TAX CALCULATOR BY MUSHROOM</h1></div>
+    </header>
+    <div class="wrapper">
+        <div class="container" id="topContainer">
+            <div class="title">Total Bill</div>
+            <div class="inputContainer"> <span>$ </span> <input type="text" id="billTotal" placeholder="0.00" ></div>
+        </div>
+        <div class="container">
+            <div class="title">Sales tax</div>
+            <div class="inputContainer">
+                <span>$ </span>
+                <input type="text" id="salePercent" placeholder="5" >
+            </div>
+        </div>
+        <div class="container" id="bottom">
+            <button id="calculateBtn" onclick="calculateTotal()">Calculate</button>
+
+            <div class="totalContainer">
+                <div class="title">Total amount</div>
+                <div class="total" id="totalBill">$ 0.00</div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
